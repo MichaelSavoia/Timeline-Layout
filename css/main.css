@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'helvetica'; }
+
+.container {
+  width: 990px;
+  padding: 82px 41px;
+  padding-bottom: 0%;
+  line-height: 1.2em;
+  display: block;
+  position: relative; }
+  .container .timeline {
+    width: 10%;
+    display: inline-block;
+    text-align: right;
+    line-height: 1.2em;
+    vertical-align: top; }
+    .container .timeline #date {
+      font-size: 0.8em;
+      color: #D6D9DC;
+      display: block; }
+    .container .timeline #time {
+      font-size: 2em;
+      color: #72B8E8;
+      display: block; }
+  .container .bar {
+    width: 10px;
+    height: 105%;
+    background-color: #b4d9f3;
+    position: absolute;
+    top: 85px;
+    left: 165px;
+    z-index: -1; }
+  .container .scrollbar {
+    width: 8%;
+    position: relative;
+    display: inline-block;
+    padding: 0% 1%;
+    vertical-align: top;
+    text-align: center; }
+    .container .scrollbar .icon {
+      font-size: 35px;
+      background-color: #72B8E8;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 8px solid #b4d9f3;
+      animation: pulse 2s linear 1; }
+      .container .scrollbar .icon i {
+        color: white; }
+  .container .textbox {
+    display: inline-block;
+    width: 79%;
+    padding: 5%;
+    background-color: #72B8E8;
+    border-radius: 5px;
+    position: relative; }
+    .container .textbox .carot {
+      height: 25px;
+      width: 25px;
+      background-color: #72B8E8;
+      position: absolute;
+      top: 16px;
+      left: -7px;
+      transform: rotate(45deg);
+      z-index: -1; }
+    .container .textbox .text {
+      color: white; }
+      .container .textbox .text #title {
+        display: block;
+        font-size: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid white; }
+      .container .textbox .text #article {
+        display: block;
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 1.4em;
+        padding-top: 20px; }
+
+.container2 .timeline #time {
+  color: #3097dd; }
+
+.container2 .scrollbar .icon {
+  background-color: #3097dd;
+  font-size: 20px;
+  padding-top: 8px; }
+
+.container2 .textbox {
+  background-color: #3097dd; }
+  .container2 .textbox .carot {
+    background-color: #3097dd; }
+
+.container3 .timeline #time {
+  color: #1b6da6; }
+
+.container3 .scrollbar .icon {
+  font-size: 20px;
+  padding-top: 8px;
+  background-color: #1b6da6; }
+
+.container3 .textbox {
+  background-color: #1b6da6; }
+  .container3 .textbox .carot {
+    background-color: #1b6da6; }
+
+.container4 .timeline #time {
+  color: #104264; }
+
+.container4 .scrollbar .icon {
+  font-size: 20px;
+  background-color: #104264;
+  padding-top: 8px; }
+
+.container4 .bar {
+  display: none; }
+
+.container4 .textbox {
+  background-color: #104264; }
+  .container4 .textbox .carot {
+    background-color: #104264; }
+
+@media screen and (max-width: 990px) {
+  .container {
+    width: 100%;
+    padding: 5%;
+    padding-right: 0%; }
+    .container .timeline {
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin-left: 15%; }
+      .container .timeline #date {
+        display: inline; }
+      .container .timeline #time {
+        display: inline; }
+    .container .textbox .carot {
+      display: hidden; }
+    .container .bar {
+      display: none; }
+    .container .scrollbar {
+      margin-right: 5%; }
+      .container .scrollbar i {
+        display: hidden; } }
+
+@media screen and (max-width: 550px) {
+  .container {
+    padding-right: 5%; }
+    .container .timeline {
+      margin-left: 1%; }
+    .container .textbox {
+      width: 100%; }
+      .container .textbox .carot {
+        display: none; }
+    .container .scrollbar {
+      display: none; } }

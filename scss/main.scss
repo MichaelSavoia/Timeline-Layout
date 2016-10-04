@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box; 
+}
+
+@import 'colors';
+
+body{
+	font-family: 'helvetica';
+}
+
+// @keyframes extend{
+// 	from{ height:0%;}
+// 	to{ height: 105%;}
+// }
+
+.container{
+	width: 990px;
+	padding: 82px 41px;
+	padding-bottom: 0%;
+	line-height: 1.2em;
+	display: block;
+	position: relative;
+
+	.timeline{
+		width: 10%;
+	    display: inline-block;
+	    text-align: right;
+	    line-height: 1.2em;
+	    vertical-align: top;
+
+		#date{
+			font-size: 0.8em;
+			color: #D6D9DC;
+			display: block;
+		}
+
+		#time{
+			font-size: 2em;
+			color:$primary-color;
+			display: block;
+		}
+	}
+
+	.bar{
+		width: 10px;
+    	height: 105%;
+    	background-color: lighten($primary-color, 15%);
+    	position: absolute;
+    	top: 85px;
+    	left: 165px;
+    	z-index: -1;
+
+	}
+
+	.scrollbar{
+		width: 8%;
+		position: relative;
+		display: inline-block;
+		padding: 0% 1%;
+		vertical-align: top;
+		text-align: center;
+		// animation: extend 2s linear 1;
+
+		.icon{
+			font-size: 35px;
+	    	background-color: $primary-color;
+	    	width: 50px;
+	    	height: 50px;
+	    	border-radius: 50%;
+	    	border: 8px solid lighten($primary-color, 15%);
+	    	animation: pulse 2s linear 1;
+
+			i{
+				color: white;
+			}
+		}
+	}
+
+	.textbox{
+		display: inline-block;
+		width: 79%;
+		padding: 5%;
+		background-color: $primary-color;
+		border-radius: 5px;
+		position: relative;
+
+		.carot{
+			height: 25px;
+			width: 25px;
+			background-color:$primary-color;
+			position: absolute;
+			top: 16px;
+			left: -7px;
+			transform: rotate(45deg);
+			z-index: -1;
+		}
+
+		.text{
+			color: white;
+
+			#title{
+				display: block;
+				font-size: 30px;
+				padding-bottom: 15px;
+				border-bottom: 1px solid white;
+			}
+
+			#article{
+				display: block;
+				font-size: 20px;
+				font-weight: 200;
+				line-height: 1.4em;
+				padding-top: 20px;
+			}
+		}
+	}
+}
+
+.container2{
+	.timeline{
+		#time{
+			color: $second-color;
+		}
+	}
+
+	.scrollbar{
+		.icon{
+			background-color: $second-color;
+			font-size: 20px;
+			padding-top: 8px;
+		}
+	}
+
+	.textbox{
+		background-color: $second-color;
+
+		.carot{
+			background-color: $second-color;
+		}
+	}
+}
+
+.container3{
+	.timeline{
+		#time{
+			color: $third-color;
+		}
+	}
+
+	.scrollbar{
+		.icon{
+			font-size: 20px;
+			padding-top: 8px;
+			background-color: $third-color
+		}
+	}
+
+	.textbox{
+		background-color: $third-color;
+
+		.carot{
+			background-color: $third-color;
+		}
+	}
+}
+
+.container4{
+	.timeline{
+		#time{
+			color: $fourth-color;
+		}
+	}
+
+	.scrollbar{
+		.icon{
+			font-size: 20px;
+			background-color: $fourth-color;
+			padding-top: 8px;
+		}
+	}
+
+	.bar{
+		display: none;
+	}
+
+	.textbox{
+		background-color: $fourth-color;
+
+		.carot{
+			background-color: $fourth-color;
+		}
+	}
+}
+
+@media screen and (max-width: 990px){
+
+	.container{
+		width: 100%;
+		padding: 5%;
+		padding-right: 0%;
+
+		.timeline{
+			display: block;
+			width: 100%;
+			text-align: left;
+			margin-left: 15%;
+
+			#date{
+				display: inline;
+			}
+
+			#time{
+				display: inline;
+			}
+		}
+
+		.textbox{
+			.carot{
+				display: hidden;
+			}
+		}
+
+		.bar{
+			display: none;
+		}
+
+		.scrollbar{
+			margin-right: 5%;
+
+			i{
+				display: hidden;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 550px){
+	.container{
+		padding-right:5%;
+
+		.timeline{
+			margin-left: 1%;
+		}
+
+		.textbox{
+			width: 100%;
+
+			.carot{
+				display: none;
+			}
+		}
+
+		.scrollbar{
+			display: none;
+		}
+	}
+}
