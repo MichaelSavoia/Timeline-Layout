@@ -62,7 +62,7 @@ body {
       width: 25px;
       background-color: #72B8E8;
       position: absolute;
-      top: 16px;
+      top: 10px;
       left: -7px;
       transform: rotate(45deg);
       z-index: -1; }
@@ -86,7 +86,7 @@ body {
 .container2 .scrollbar .icon {
   background-color: #3097dd;
   font-size: 20px;
-  padding-top: 8px; }
+  padding-top: 7px; }
 
 .container2 .textbox {
   background-color: #3097dd; }
@@ -98,7 +98,7 @@ body {
 
 .container3 .scrollbar .icon {
   font-size: 20px;
-  padding-top: 8px;
+  padding-top: 7px;
   background-color: #1b6da6; }
 
 .container3 .textbox {
@@ -112,7 +112,7 @@ body {
 .container4 .scrollbar .icon {
   font-size: 20px;
   background-color: #104264;
-  padding-top: 8px; }
+  padding-top: 7px; }
 
 .container4 .bar {
   display: none; }

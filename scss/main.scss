@@ -89,7 +89,7 @@ body{
 			width: 25px;
 			background-color:$primary-color;
 			position: absolute;
-			top: 16px;
+			top: 10px;
 			left: -7px;
 			transform: rotate(45deg);
 			z-index: -1;
@@ -127,7 +127,7 @@ body{
 		.icon{
 			background-color: $second-color;
 			font-size: 20px;
-			padding-top: 8px;
+			padding-top: 7px;
 		}
 	}
 
@@ -150,7 +150,7 @@ body{
 	.scrollbar{
 		.icon{
 			font-size: 20px;
-			padding-top: 8px;
+			padding-top: 7px;
 			background-color: $third-color
 		}
 	}
@@ -175,7 +175,7 @@ body{
 		.icon{
 			font-size: 20px;
 			background-color: $fourth-color;
-			padding-top: 8px;
+			padding-top: 7px;
 		}
 	}
 
