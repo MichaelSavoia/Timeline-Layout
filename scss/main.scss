@@ -8,10 +8,10 @@ body{
 	font-family: 'helvetica';
 }
 
-// @keyframes extend{
-// 	from{ height:0%;}
-// 	to{ height: 105%;}
-// }
+@keyframes extend{
+	from{ height:0%;}
+	to{ height: 100%;}
+}
 
 .container{
 	width: 990px;
@@ -49,6 +49,7 @@ body{
     	top: 85px;
     	left: 165px;
     	z-index: -1;
+    	animation: extend 1.5s ease-out 1;
 
 	}
 
@@ -59,7 +60,6 @@ body{
 		padding: 0% 1%;
 		vertical-align: top;
 		text-align: center;
-		// animation: extend 2s linear 1;
 
 		.icon{
 			font-size: 35px;
